@@ -1,0 +1,264 @@
+@import "./templ.css";
+
+.middle__side__wrapper{
+    max-width: 640px;
+    margin: 0 auto;
+
+
+}
+
+.middle__side-title{
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #669885;
+    font-family: "Montserrat", Times, serif;
+}
+
+.middle__side-span{
+    font-size: 16px;
+    line-height: 19px;
+    color: #669885;
+    font-family: "MontserratBold", Times, serif;
+}
+
+.middle__side-card{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.card-img{
+    /*background-image: url("../images/5d87fd0f82452ab6787e72d1754d8900.png");*/
+    min-width: 250px;
+    min-height: 250px;
+
+}
+
+.card-info{
+    width: 370px;
+    height: 250px;
+    /*background-color: red;*/
+}
+
+.card-info-title{
+    font-size: 22px;
+    line-height: 27px;
+    color: #84B6A3;
+    font-family: "MontserratBold", Times, serif;
+}
+
+.card-info1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 18px;
+    color: #393939;
+    font-family: "MontserratMedium", Times, serif;
+    margin-top: 15px;
+
+}
+
+.card-info1 p{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.card-info1 span{
+    color: #84B6A3;
+}
+
+.card-info1-col1{
+    min-width: 155px;
+}
+
+.card-info1-col2{
+    min-width: 180px;
+}
+
+.card-info-description{
+    max-width: 353px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #393939;
+    font-family: "MontserratMedium", Times, serif;
+    margin-top: 10px;
+
+}
+
+.card-info-description span{
+    color: #84B6A3;
+}
+
+.card-info-description p{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.card-info-line{
+    height: 1px;
+    width: 370px;
+    background-color: #00000029;
+    margin-top: 7px;
+}
+
+.card-info-adress{
+    max-width: 353px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #393939;
+    font-family: "MontserratMedium", Times, serif;
+    margin-top: 7px;
+    position: relative;
+    padding-left: 17px;
+}
+
+.card-info-adress:after{
+    content: url('../images/map-marker-solid.svg');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 13px;
+    width: 9px;
+}
+
+.card-info-john{
+    font-size: 16px;
+    line-height: 19px;
+    color: #84B6A3;
+    font-family: "MontserratSemiBold", Times, serif;
+}
+
+.card-info-date{
+    font-size: 12px;
+    line-height: 15px;
+    color: #BABABA;
+    font-family: "MontserratMedium", Times, serif;
+}
+
+.card-info-footer{
+    padding-left: 55px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.card-info-footer p{
+    margin: 0;
+    padding: 0;
+}
+
+.card-info-footer:before{
+    content: url('../images/3b0045c9cc47b640ddcb43d6d06d1379.png');
+    position: absolute;
+    top: 3px;
+    left: 0px;
+
+}
+
+.card-info-phone{
+    position: absolute;
+    height: 18px;
+    width: 16px;
+    left: 250px;
+    top: 15px;
+
+}
+
+.card-info-facebook{
+    position: absolute;
+    height: 18px;
+    width: 16px;
+    left: 278px;
+    top: 15px;
+}
+
+.card-info-emeil{
+    position: absolute;
+    height: 18px;
+    width: 16px;
+    left: 306px;
+    top: 15px;
+}
+
+.middle-side-finger-text{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #84B6A3;
+    font-family: "MontserratSemiBold", Times, serif;
+}
+.middle-side-buttons{
+    margin-top: 60px;
+    margin-left: 360px;
+}
+.middle-side-button-edit{
+    text-decoration: none;
+    height: 34px;
+    width: 105px;
+    border: 1px solid #8DBFAC;
+    margin-right: 11px;
+    border-radius: 17px;
+    text-align: center;
+    padding-top: 8px;
+    color: #84B6A3;
+    font-size: 12px;
+    align-items: center;
+    font-family: "MontserratMedium", Times, serif;
+    position: relative;
+}
+
+.middle-side-button-edit:before{
+    content: url('../images/edit-solid.svg');
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    top: 7px;
+    left: 12px;
+
+}
+
+.middle-side-button-edit:hover{
+    border: 1px solid #393939;
+}
+
+.middle-side-button-publish{
+    text-decoration: none;
+    height: 34px;
+    width: 148px;
+    border: 1px solid #8DBFAC;
+    background-color: #84B6A3;
+    margin-right: 11px;
+    border-radius: 17px;
+    text-align: center;
+    padding-top: 8px;
+    color: #FFFFFF;
+    font-size: 12px;
+    align-items: center;
+    font-family: "MontserratMedium", Times, serif;
+    position: relative;
+}
+
+.middle-side-button-publish:before{
+    content: url('../images/paw-solid.svg');
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    top: 6px;
+    left: 12px;
+
+}
+
+.middle-side-button-publish:hover{
+    border: 1px solid #393939;
+}
+
+.middle-side-clicking-text{
+    margin-top: 30px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #BABABA;
+    font-family: "MontserratMedium", Times, serif;
+    margin-left: 130px;
+}

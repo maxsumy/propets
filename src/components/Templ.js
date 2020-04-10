@@ -47,7 +47,7 @@ class Templ extends React.Component {
                                     <li className="logout-li"><a href="#">Logout</a></li>
                                 </ul>
                             </div>
-
+                            
                         </div>
 
                     </div>
