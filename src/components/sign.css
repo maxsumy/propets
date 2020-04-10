@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'MontserratBold';
+    src: local('MontserratBold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: local('MontserratMedium'), url(../fonts/Montserrat-Medium.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.containerSign {
+    background-color: silver;
+    width: 650px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    /*padding: 0 15px;*/
+}
+
+.headerSign{
+    background-color: #669885;
+    height: 35px;
+}
+
+.imgSign{
+    padding-left: 13px;
+    padding-top: 4px;
+}
+
+.textSign{
+    font-family: "MontserratMedium";
+    color: #669885;
+    padding-left: 13px;
+    padding-top: 4px;
+}
+
+.textSignBold{
+    font-family: "MontserratBold";
+}
+
+.signUpSign{
+    background-color: #669885;
+    height: 34px;
+    width: 311px;
+    margin-left: 13px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpText{
+    color: #FFFFFF;
+    font-family: "MontserratBold";
+    font-size: 16px;
+    /*left: auto;*/
+    /*right: auto;*/
+    /*position: absolute;*/
+}
+
+.singForm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13px;
+    width: 311px;
+}
+
+.label-group-sing{
+    margin-left: 40px;
+    color: #393939;
+    size: 12px;
+    font-family: "MontserratMedium";
+}
+
+.input-group-sing{
+    height: 12px;
+}
+
+.label-sing{
+    clear: both;
+   float: right;
+    height: 17px;
+    margin-bottom: 10px;
+}
