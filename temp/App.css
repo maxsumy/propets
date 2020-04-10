@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url(./fonts/SpicyRice-Regular.ttf) format('truetype');
+}
+
+.header {
+
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 70px;
+    background: #669885 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1
+}
+
+.pro_pets_logo{
+  position: absolute;
+  margin-left: 151px;
+  margin-top: 24px;
+}
+
+.btn_sign_in{
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 20px;
+    border: solid aliceblue 1px;
+    color: aliceblue;
+}
+
+.main1{
+    top: 70px;
+    left: 0px;
+    width: 1366px;
+    height: 623px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.text_main1{
+    position: absolute;
+    top: 68px;
+    left: 0px;
+    width: 369px;
+    height: 68px;
+    text-align: left;
+    font-family: "Montserrat", Times, serif;
+    color: pink;
+    font-size: 68px;
+    letter-spacing: 0;
+
+}
+
+.img_dog{
+    position: absolute;
+    top: 79px;
+    left: 754px;
+    width: 452px;
+    height: 596px;
+    background: transparent url('images/Image 2.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+
+.footer{
+    top: 693px;
+    left: 0px;
+    width: 1366px;
+    height: 260px;
+    background: #669885 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+

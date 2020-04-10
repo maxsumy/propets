@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import Test from "./components/Test";
+// import Adding_new_lost from "./components/Adding_new_lost";
+// import Adding_new_found from "./components/Adding_new_found";
+import Sign from "./components/Sing";
+import Templ from "./components/Templ";
+// import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/*<Test/>*/}
+      <Templ/>
     </div>
   );
 }

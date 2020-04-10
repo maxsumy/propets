@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0687d8a-b226-4d8a-941c-5caf67b6e1ad" name="Default Changelist" comment="" />
+    <list default="true" id="c0687d8a-b226-4d8a-941c-5caf67b6e1ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
   <component name="ProjectId" id="1XCL6OEN6BFkvLyLe2TBsCTzwTU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/untitled" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\maxim\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,8 +88,62 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580544953121</updated>
-      <workItem from="1580544960073" duration="505000" />
+      <workItem from="1580544960073" duration="11584000" />
+      <workItem from="1581006379147" duration="10160000" />
+      <workItem from="1581061732068" duration="1405000" />
+      <workItem from="1581082702527" duration="14300000" />
+      <workItem from="1581146951506" duration="17546000" />
+      <workItem from="1581181006513" duration="8608000" />
+      <workItem from="1581263088467" duration="5827000" />
+      <workItem from="1581349875202" duration="8614000" />
+      <workItem from="1581520806196" duration="698000" />
+      <workItem from="1581521916245" duration="49000" />
+      <workItem from="1581522013018" duration="113000" />
+      <workItem from="1581523882905" duration="111000" />
+      <workItem from="1581524179004" duration="1636000" />
+      <workItem from="1581527395338" duration="7157000" />
+      <workItem from="1581536988992" duration="33000" />
+      <workItem from="1581607234097" duration="6713000" />
+      <workItem from="1581665349904" duration="3629000" />
+      <workItem from="1584789134615" duration="1439000" />
+      <workItem from="1584896559731" duration="3503000" />
+      <workItem from="1585238210135" duration="1261000" />
+      <workItem from="1585293160286" duration="1427000" />
+      <workItem from="1585405798048" duration="4831000" />
+      <workItem from="1585496146055" duration="9372000" />
+      <workItem from="1585581716440" duration="10441000" />
+      <workItem from="1585671954580" duration="1069000" />
+      <workItem from="1585753452960" duration="10191000" />
+      <workItem from="1585826827837" duration="18493000" />
+      <workItem from="1585895663224" duration="21229000" />
+      <workItem from="1586500825797" duration="8029000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1345" height="175" key="GridCell.Tab.0.bottom" />
+    <state width="1345" height="175" key="GridCell.Tab.0.bottom/0.0.1366.724@0.0.1366.724" />
+    <state width="1345" height="175" key="GridCell.Tab.0.center" />
+    <state width="1345" height="175" key="GridCell.Tab.0.center/0.0.1366.724@0.0.1366.724" />
+    <state width="1345" height="175" key="GridCell.Tab.0.left" />
+    <state width="1345" height="175" key="GridCell.Tab.0.left/0.0.1366.724@0.0.1366.724" />
+    <state width="1345" height="175" key="GridCell.Tab.0.right" />
+    <state width="1345" height="175" key="GridCell.Tab.0.right/0.0.1366.724@0.0.1366.724" />
   </component>
 </project>
