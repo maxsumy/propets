@@ -89,36 +89,46 @@
 }
 
 .menu-ul-li-1:before{
-    content: url('../images/found_foot.png');
+    content: url('../images/home-solid.svg');
+    height: 16px;
+    width: 18px;
     position: absolute;
     top: 13px;
     left: -30px;
 }
 
 .menu-ul-li-2:before{
-    content: url('../images/lost.png');
+    content: url('../images/search-solid.svg');
+    height: 16px;
+    width: 16px;
     position: absolute;
     top: 13px;
     left: -30px;
 }
 
 .menu-ul-li-3:before{
-    content: url('../images/found_foot.png');
+    content: url('../images/paw-solid.svg');
     position: absolute;
+    height: 16px;
+    width: 16px;
     top: 13px;
     left: -30px;
 }
 
 .menu-ul-li-4:before{
-    content: url('../images/lost.png');
+    content: url('../images/bullhorn-solid.svg');
     position: absolute;
+    height: 16px;
+    width: 18px;
     top: 13px;
     left: -30px;
 }
 
 .menu-ul-li-5:before{
-    content: url('../images/found_foot.png');
+    content: url('../images/star-solid.svg');
     position: absolute;
+    height: 16px;
+    width: 18px;
     top: 13px;
     left: -30px;
 }
@@ -169,8 +179,10 @@
 }
 
 .logout:before{
-    content: url('../images/lost.png');
+    content: url('../images/sign-out-alt-solid.svg');
     position: absolute;
+    height: 18px;
+    width: 17px;
     top: 2px;
     left: -25px;
 }
