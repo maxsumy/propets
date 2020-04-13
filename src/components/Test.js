@@ -30,6 +30,10 @@ class Test extends React.Component {
             },
             footerStyle:{
                "margin-top": '35px'
+            },
+
+            SubmitStyle:{
+                "top": '50px'
             }
 
           };
@@ -84,6 +88,9 @@ class Test extends React.Component {
             },
             footerStyle:{
                 "margin-top": '103px'
+            },
+            SubmitStyle:{
+                "top": '118px'
             }
         });
 
@@ -104,9 +111,22 @@ class Test extends React.Component {
             },
             footerStyle:{
                 "margin-top": '35px'
+            },
+            SubmitStyle:{
+                "top": '50px'
             }
         });
     }
+
+    getCity = (e) => {
+        e.preventDefault();
+        let city = e.target.name.value;
+        let email = e.target.email.value;
+        console.log(city+" "+email);
+    }
+
+
+
 
     render() {
         return (
@@ -317,10 +337,17 @@ class Test extends React.Component {
                                     </div>
 
                                     <div className="input-group-sing">
-                                        <input className="label-sing" type="text" id="Student" style={this.state.divStyle1}/>
-                                        <input className="label-sing" type="text" id="Student"/>
-                                        <input className="label-sing" type="password" id="pwd" name="pwd"/>
-                                        <input className="label-sing" type="password" id="pwd" name="pwd" style={this.state.divStyle1}/>
+                                        <form onSubmit={this.getCity}>
+                                            <input className="label-sing" type="text" name="name" style={this.state.divStyle1}/>
+                                            <input className="label-sing" type="text" name="email"/>
+                                            <input className="label-sing" type="password" id="pwd" name="pwd1"/>
+                                            <input className="label-sing" type="password" id="pwd" name="pwd2" style={this.state.divStyle1}/>
+                                            <div>
+                                                <button className="form-button-submit sub" type="submit" style={this.state.SubmitStyle}>Submit</button>
+                                            </div>
+
+
+                                        </form>
                                     </div>
                                 </div>
                                 <div className="forms__text" style={this.state.divStyle1}>
@@ -362,9 +389,9 @@ class Test extends React.Component {
                                         <a onClick={this.mouseClickOnX}  className="button-cancel" href="#">Cancel</a>
                                     </div>
 
-                                    <div className="sing-button-submit">
-                                        <a className="button-submit" href="#">Submit</a>
-                                    </div>
+                                    {/*<div className="sing-button-submit">*/}
+                                    {/*    <a className="button-submit" href="#">Submit</a>*/}
+                                    {/*</div>*/}
 
 
 
