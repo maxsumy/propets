@@ -1,5 +1,6 @@
 import React from "react";
 import "./test.css";
+const API_KEY = 'b37c9f388a5e5f718b5278ae72cc67d6';
 
 class Test extends React.Component {
 
@@ -34,6 +35,23 @@ class Test extends React.Component {
 
             SubmitStyle:{
                 "top": '50px'
+            },
+
+            weatherInfo: {
+                temp: undefined,
+                city: undefined,
+                country: undefined,
+                pressure: undefined,
+                sunset: undefined,
+                error: "Enter city name"
+            },
+
+            propets: {
+                name: undefined,
+                email: undefined,
+                password: undefined,
+                roles: [],
+                headers: []
             }
 
           };
@@ -120,10 +138,85 @@ class Test extends React.Component {
 
     getCity = (e) => {
         e.preventDefault();
-        let city = e.target.name.value;
+        let name = e.target.name.value;
         let email = e.target.email.value;
-        console.log(city+" "+email);
+        let password = e.target.pwd1.value;
+        console.log(name+" "+email+" "+password);
+        this.registerUser(name,email,password)
+        // this.getWeather(name);
+        // console.log(this.state.weatherInfo.temp)
     }
+
+    registerUser = async (name, email, password) => {
+        const res = await fetch("http://localhost:8080/en/v1/", {
+            method: "POST",
+            headers: {'Content-Type': 'application/json'},
+            // mode: 'cors',
+            // cache: 'default',
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                password: password
+            })
+        });
+
+        const json = await res.json();
+
+        this.setState({
+            propets:{
+                name: json.name,
+                email: json.email,
+                roles: json.roles,
+               
+            }
+
+        })
+
+
+
+    }
+
+    getWeather = async (city) => {
+        if (city) {
+            try {
+                const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+                const json = await res.json();
+                this.setState({
+                    weatherInfo: {
+                        temp: json.main.temp,
+                        city: json.name,
+                        country: json.sys.country,
+                        pressure: json.main.pressure,
+                        sunset: json.sys.sunset,
+                        error: undefined
+                    }
+                });
+            } catch (e) {
+                this.setState({
+                    weatherInfo: {
+                        temp: undefined,
+                        city: undefined,
+                        country: undefined,
+                        pressure: undefined,
+                        sunset: undefined,
+                        error: 'Enter correct city name'
+                    }
+                })
+            }
+        } else {
+            this.setState({
+                weatherInfo: {
+                    temp: undefined,
+                    city: undefined,
+                    country: undefined,
+                    pressure: undefined,
+                    sunset: undefined,
+                    error: 'Enter city name'
+                }
+            })
+        }
+    }
+
 
 
 
@@ -131,13 +224,20 @@ class Test extends React.Component {
     render() {
         return (
             <div>
+                <div>  {this.state.propets.name}</div>
+                <div>  {this.state.propets.email}</div>
+                <div>  {this.state.propets.roles[0]}</div>
+                {/*<div>  {this.state.propets.headers}</div>*/}
                 <header className="header">
                     <div className="container">
 
                         <div className="header_logo">
                             <a href="#"><img src={require("../images/Group 1.svg")} alt="logo"/></a>
 
+
                         </div>
+
+
 
                         <nav className="menu">
                             <ul>
@@ -340,8 +440,8 @@ class Test extends React.Component {
                                         <form onSubmit={this.getCity}>
                                             <input className="label-sing" type="text" name="name" style={this.state.divStyle1}/>
                                             <input className="label-sing" type="text" name="email"/>
-                                            <input className="label-sing" type="password" id="pwd" name="pwd1"/>
-                                            <input className="label-sing" type="password" id="pwd" name="pwd2" style={this.state.divStyle1}/>
+                                            <input className="label-sing" type="password" name="pwd1"/>
+                                            <input className="label-sing" type="password" name="pwd2" style={this.state.divStyle1}/>
                                             <div>
                                                 <button className="form-button-submit sub" type="submit" style={this.state.SubmitStyle}>Submit</button>
                                             </div>
