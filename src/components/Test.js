@@ -51,7 +51,7 @@ class Test extends React.Component {
                 email: undefined,
                 password: undefined,
                 roles: [],
-                headers: []
+                x_token: undefined
             }
 
           };
@@ -143,8 +143,7 @@ class Test extends React.Component {
         let password = e.target.pwd1.value;
         console.log(name+" "+email+" "+password);
         this.registerUser(name,email,password)
-        // this.getWeather(name);
-        // console.log(this.state.weatherInfo.temp)
+
     }
 
     registerUser = async (name, email, password) => {
@@ -156,18 +155,23 @@ class Test extends React.Component {
             body: JSON.stringify({
                 name: name,
                 email: email,
-                password: password
+                password: password,
+
             })
         });
 
         const json = await res.json();
+        const headers = await res.headers;
+        let x_token = headers.get("X-Token");
+        localStorage.setItem('X-Token', x_token);
 
         this.setState({
             propets:{
                 name: json.name,
                 email: json.email,
                 roles: json.roles,
-               
+                x_token: x_token
+
             }
 
         })
@@ -176,50 +180,6 @@ class Test extends React.Component {
 
     }
 
-    getWeather = async (city) => {
-        if (city) {
-            try {
-                const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
-                const json = await res.json();
-                this.setState({
-                    weatherInfo: {
-                        temp: json.main.temp,
-                        city: json.name,
-                        country: json.sys.country,
-                        pressure: json.main.pressure,
-                        sunset: json.sys.sunset,
-                        error: undefined
-                    }
-                });
-            } catch (e) {
-                this.setState({
-                    weatherInfo: {
-                        temp: undefined,
-                        city: undefined,
-                        country: undefined,
-                        pressure: undefined,
-                        sunset: undefined,
-                        error: 'Enter correct city name'
-                    }
-                })
-            }
-        } else {
-            this.setState({
-                weatherInfo: {
-                    temp: undefined,
-                    city: undefined,
-                    country: undefined,
-                    pressure: undefined,
-                    sunset: undefined,
-                    error: 'Enter city name'
-                }
-            })
-        }
-    }
-
-
-
-
 
     render() {
         return (
@@ -227,7 +187,7 @@ class Test extends React.Component {
                 <div>  {this.state.propets.name}</div>
                 <div>  {this.state.propets.email}</div>
                 <div>  {this.state.propets.roles[0]}</div>
-                {/*<div>  {this.state.propets.headers}</div>*/}
+                <div>  {this.state.propets.x_token}</div>
                 <header className="header">
                     <div className="container">
 

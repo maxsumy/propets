@@ -7,12 +7,13 @@ import Sign from "./components/Sing";
 import Templ from "./components/Templ";
 import Confirmation_post from "./components/Confirmation_post";
 import './App.css';
+import Profile from "./components/Profile";
 
 
 function App() {
   return (
     <div>
-     <Test/>
+     <Profile/>
     </div>
   );
 }
