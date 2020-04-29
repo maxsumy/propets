@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0687d8a-b226-4d8a-941c-5caf67b6e1ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -49,7 +47,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -120,7 +118,13 @@
       <workItem from="1586594843420" duration="4748000" />
       <workItem from="1586768686031" duration="13554000" />
       <workItem from="1586870540653" duration="9560000" />
-      <workItem from="1586955242605" duration="10629000" />
+      <workItem from="1586955242605" duration="11481000" />
+      <workItem from="1587548916906" duration="3377000" />
+      <workItem from="1587567036304" duration="1368000" />
+      <workItem from="1587641290455" duration="3209000" />
+      <workItem from="1587834918831" duration="654000" />
+      <workItem from="1587887853941" duration="36000" />
+      <workItem from="1588153285628" duration="4325000" />
     </task>
     <servers />
   </component>

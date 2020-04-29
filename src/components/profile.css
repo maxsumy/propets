@@ -1,4 +1,5 @@
 @import "./templ.css";
+@import "./confirmation_post.css";
 
 .middle__side__wrapper{
     max-width: 640px;

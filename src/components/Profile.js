@@ -5,6 +5,43 @@ import "./profile.css";
 class Templ extends React.Component {
     constructor(){
         super();
+        this.state ={
+            myProfile: true,
+            activities: false,
+            opasStyle:{
+                opacity: 0.36
+            },
+            opasStyle1:{
+                opacity: 1
+            },
+        }
+
+    }
+
+    clickActivities =()=>{
+        this.setState({
+            myProfile: false,
+            activities: true,
+            opasStyle:{
+                opacity: 1
+            },
+            opasStyle1:{
+                opacity: 0.36
+            },
+        })
+    }
+
+    clickMyProfile =()=>{
+        this.setState({
+            myProfile: true,
+            activities: false,
+            opasStyle:{
+                opacity: 0.36
+            },
+            opasStyle1:{
+                opacity: 1
+            },
+        })
     }
 
     render() {
@@ -58,10 +95,12 @@ class Templ extends React.Component {
                             </div>
                             <div className="middle__side__myprofile">
                                 <div className="myprofile-buttons">
-                                    <div className="button-myprofile">My profile</div>
-                                    <div className="button-activities">Activities</div>
+
+                                    <div onClick={this.clickMyProfile} className="button-myprofile" style={this.state.opasStyle1}>My profile</div>
+                                    <div onClick={this.clickActivities} className="button-activities" style={this.state.opasStyle}>Activities</div>
                                 </div>
 
+                                {this.state.myProfile &&
                                 <div className="myprofile">
                                     <div className="myprofile-title">
                                         Anna Smith
@@ -78,11 +117,71 @@ class Templ extends React.Component {
                                         <input className="info-fb" type="text" name="fb"/>
                                     </div>
                                 </div>
+                                }
+
+                                {this.state.activities &&
+                                <div className="middle__side-card">
+
+                                    <div className="card-img" >
+                                        <img src={require("../images/5d87fd0f82452ab6787e72d1754d8900.png")} alt="logo"/>
+                                    </div>
+
+                                    <div className="card-info">
+                                        <div className="card-info-title">
+                                            Dog, Golden Retriever
+                                        </div>
+
+                                        <div className="card-info1">
+                                            <div className="card-info1-col1">
+                                                <p><span>Color:</span> golden</p>
+                                                <p><span>Sex:</span> male</p>
+                                                <p><span>Height:</span> 45 cm</p>
+                                            </div>
+                                            <div className="card-info1-col2">
+                                                <p><span>Distinctive features:</span> blue
+                                                    collar with stars, no left ear,
+                                                    damaged tail.</p>
+                                            </div>
+                                        </div>
+
+                                        <div className="card-info-description">
+                                            <p><span>Description:</span> brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+                                                Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</p>
+                                        </div>
+
+                                        <div className="card-info-line"></div>
+
+                                        <div className="card-info-adress">
+                                            Florentin, 27, Tel Aviv
+                                        </div>
+
+                                        <div className="card-info-footer">
+                                            <p className="card-info-john">John Goodboy</p>
+                                            <p className="card-info-date">Dec 12, 2019</p>
+                                            <a className="card-info-phone" href="tel:+78142332211"><img src={require("../images/phone-square-solid.svg")} alt=""/></a>
+                                            <a className="card-info-facebook" href="https://www.facebook.com" target="_blank"><img src={require("../images/facebook-square-brands.svg")} alt=""/></a>
+                                            <a className="card-info-emeil" href="mailto:ask@htmlbook.ru"><img src={require("../images/envelope-square-solid.svg")} alt=""/></a>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+
+                                }
+
+
                             </div>
+
+                            {this.state.myProfile &&
                             <div className="myprofile__buttons">
                                 <button className="myprofile__buttons-cancel">Cancel</button>
                                 <button className="myprofile__buttons-save">Save changes</button>
                             </div>
+                            }
+
                         </div>
 
                     </div>
