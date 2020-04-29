@@ -8,12 +8,13 @@ import Templ from "./components/Templ";
 import Confirmation_post from "./components/Confirmation_post";
 import './App.css';
 import Profile from "./components/Profile";
+import Service_hotels from "./components/Service_hotels";
 
 
 function App() {
   return (
     <div>
-     <Profile/>
+     <Service_hotels/>
     </div>
   );
 }

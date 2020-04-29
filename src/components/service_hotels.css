@@ -1,0 +1,96 @@
+@import "./templ.css";
+
+
+
+.button-services{
+    height: 30px;
+    width: 80px;
+    color: #FFFFFF;
+    font-family: "MontserratMedium", Times, serif;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #84B6A3;
+    padding-left: 0px;
+    margin-left: 0;
+    border: 1px solid transparent;
+    text-align: center;
+    padding-top: 1px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.button-services-span{
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+.menu-ul-li-4:before{
+    content: url('../images/bullhorn-solid.svg');
+    position: absolute;
+    height: 16px;
+    width: 18px;
+    top: 19px;
+    left: -30px;
+}
+
+.menu-main1{
+    background-color: #84B6A3;
+    width: 120px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.menu-item{
+    font-family: "MontserratMedium", Times, serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-top: 10px;
+
+}
+
+.popup-content{
+    width: 120px !important;
+}
+
+.item1, .item2, .item3, .item4{
+    position: relative;
+}
+
+.item1:before{
+    content: url('../images/hotel-solid.svg');
+    position: absolute;
+    height: 16px;
+    width: 18px;
+    top: 10px;
+    left: -22px;
+}
+
+.item2:before{
+    content: url('../images/walking-solid.svg');
+    position: absolute;
+    height: 16px;
+    width: 10px;
+    top: 10px;
+    left: -18px;
+}
+
+.item3:before{
+    content: url('../images/dog-solid.svg');
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 10px;
+    left: -20px;
+}
+
+.item4:before{
+    content: url('../images/stethoscope-solid.svg');
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 10px;
+    left: -20px;
+}
